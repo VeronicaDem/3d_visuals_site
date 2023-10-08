@@ -1,0 +1,132 @@
+:root {
+    --gray-color: #4a4f57;
+    --accent-color: #5949A2
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    opacity: 1;
+    background-color: #fbfafd;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-bottom: 100px;
+}
+
+header>nav>ul {
+    list-style-type: none;
+
+}
+
+header>nav>ul>li {
+    display: inline-block;
+}
+
+header>nav>ul>li>a {
+    list-style-type: none;
+    display: block;
+    text-decoration: none;
+    color: var(--gray-color);
+    padding: 0 15px;
+    font-weight: 500;
+    transition: color .4s ease-in-out;
+}
+
+header>nav>ul>li>a:hover {
+    color: var(--accent-color)
+}
+
+header>.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+header>.header-buttons>a {
+    text-decoration: none;
+    color: var(--gray-color);
+}
+
+header>.header-buttons>a:last-child {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+main h2 {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+main h1 {
+    color: #333;
+    line-height: 1.2;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+main .left-side {
+    padding-right: 30px;
+
+}
+
+main p {
+    color: var(--gray-color);
+    line-height: 2;
+    font-weight: 500;
+}
+
+main .main-buttons {
+    display: flex;
+    align-items: center;
+}
+
+main .main-buttons>.watch-video {
+    background-color: var(--accent-color);
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 30px;
+    min-width: 230px;
+}
+
+main .main-buttons>.watch-video::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-image: url("../img/replay-icon.svg");
+    background-size: 20px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .main-buttons>a {
+    color: #90b1d7;
+    text-decoration: none;
+    margin-left: 20px;
+}
